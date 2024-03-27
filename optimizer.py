@@ -49,15 +49,7 @@ st.sidebar.image(image, caption=None, width=None, use_column_width=None, clamp=F
 #snowflake_config = st.secrets["sf_usage_app"]
 #connect to snowflake function
 
-SNOWFLAKE_CONFIG = {
-    "account": "anblicksorg_aws.us-east-1",#https://anblicksorg_aws.us-east-1.snowflakecomputing.com
-    "user": "snowgov",#snowgov
-    "password": "SnowGov@202308",#SnowGov@202308
-    "role": "ACCOUNTADMIN",
-    "warehouse": "SNOWGOV_WH",#SNOWGOV_WH
-    "database": "UTIL_DB",
-    "schema": "ADMIN_TOOLS"
-}
+
 with open ('styles_1.css') as f:
         st.markdown(f'<style>{f.read()}</style>',unsafe_allow_html=True)
 
